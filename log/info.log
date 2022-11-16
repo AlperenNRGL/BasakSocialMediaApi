@@ -1,0 +1,2732 @@
+{
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:19:59.046Z'
+}
+{
+  message: ReferenceError: lale is not defined
+      at /Users/alperennuroglu/Documents/SocialMediaApi/app.js:254:5
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:20:33.347Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:21:40.390Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:21:49.692Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:22:43.101Z'
+}
+{
+  message: ReferenceError: lale is not defined
+      at /Users/alperennuroglu/Documents/SocialMediaApi/app.js:254:5
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:22:43.153Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:25:44.120Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:25:51.864Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:26:01.165Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:28:40.239Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T04:37:36.898Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T16:17:57.390Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T16:33:48.473Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T16:34:54.931Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T16:35:49.123Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T16:42:37.985Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T16:42:57.603Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T16:46:03.262Z'
+}
+{
+  message: CastError: Cast to ObjectId failed for value "[object HTMLInputElement]" (type string) at path "_id" for model "user"
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4990:15)
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    messageFormat: undefined,
+    stringValue: '"[object HTMLInputElement]"',
+    kind: 'ObjectId',
+    value: '[object HTMLInputElement]',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/bson/lib/error.js:41:28)
+        at new ObjectId (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/bson/lib/objectid.js:67:23)
+        at castObjectId (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-05T17:35:28.972Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T17:35:45.299Z'
+}
+{
+  message: CastError: Cast to Number failed for value "[object HTMLInputElement]" (type string) at path "skip"
+      at model.Query.skip (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:884:13)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/app.js:260:10
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    stringValue: '"[object HTMLInputElement]"',
+    messageFormat: undefined,
+    kind: 'Number',
+    value: '[object HTMLInputElement]',
+    path: 'skip',
+    reason: undefined,
+    valueType: 'string'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-05T17:35:48.676Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T17:36:07.144Z'
+}
+{
+  message: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+      at Function.Model.$wrapCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/model.js:5214:32)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4908:21
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:41:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:40:10)
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4907:10)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 97945885,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection <monitor> to 15.184.139.49:27017 timed out
+              at Timeout._onTimeout (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connection.js:150:23)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {},
+            [Symbol(beforeHandshake)]: false
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 97945825,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection <monitor> to 15.184.72.82:27017 timed out
+              at Timeout._onTimeout (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connection.js:150:23)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {},
+            [Symbol(beforeHandshake)]: false
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 97945852,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection <monitor> to 15.184.66.29:27017 timed out
+              at Timeout._onTimeout (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connection.js:150:23)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {},
+            [Symbol(beforeHandshake)]: false
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-m8czsm-shard-0',
+      maxElectionId: new ObjectId("7fffffff0000000000000015"),
+      maxSetVersion: 2,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-05T17:42:24.914Z'
+}
+{
+  message: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+      at Function.Model.$wrapCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/model.js:5214:32)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4908:21
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:41:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:40:10)
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4907:10)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 97985890,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:389:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:627:28)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.Socket._onTimeout (node:net:526:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 97985830,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:389:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:627:28)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.Socket._onTimeout (node:net:526:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 97985856,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:389:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:627:28)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.Socket._onTimeout (node:net:526:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-m8czsm-shard-0',
+      maxElectionId: new ObjectId("7fffffff0000000000000015"),
+      maxSetVersion: 2,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-05T17:42:33.900Z'
+}
+{
+  message: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+      at Function.Model.$wrapCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/model.js:5214:32)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4908:21
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:41:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:40:10)
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4907:10)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4990:15)
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 98508442,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:389:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:627:28)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.Socket._onTimeout (node:net:526:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 98508463,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:389:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:627:28)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.Socket._onTimeout (node:net:526:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 98508474,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:389:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:627:28)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.Socket._onTimeout (node:net:526:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-m8czsm-shard-0',
+      maxElectionId: new ObjectId("7fffffff0000000000000015"),
+      maxSetVersion: 2,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-05T17:51:30.698Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T20:08:01.221Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-05T20:47:24.564Z'
+}
+{
+  message: CastError: Cast to ObjectId failed for value " 63517026b157c2ec5d2110b9" (type string) at path "_id" for model "post"
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4990:15)
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    messageFormat: undefined,
+    stringValue: '" 63517026b157c2ec5d2110b9"',
+    kind: 'ObjectId',
+    value: ' 63517026b157c2ec5d2110b9',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/bson/lib/error.js:41:28)
+        at new ObjectId (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/bson/lib/objectid.js:67:23)
+        at castObjectId (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-05T20:59:26.901Z'
+}
+{
+  message: CastError: Cast to ObjectId failed for value " 63517026b157c2ec5d2110b9" (type string) at path "_id" for model "post"
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4990:15)
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    messageFormat: undefined,
+    stringValue: '" 63517026b157c2ec5d2110b9"',
+    kind: 'ObjectId',
+    value: ' 63517026b157c2ec5d2110b9',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/bson/lib/error.js:41:28)
+        at new ObjectId (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/bson/lib/objectid.js:67:23)
+        at castObjectId (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-05T21:22:49.508Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-06T04:41:20.265Z'
+}
+{
+  message: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+      at Function.Model.$wrapCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/model.js:5214:32)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4908:21
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:41:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:40:10)
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4907:10)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4990:15)
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 138531487,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:389:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:627:28)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.Socket._onTimeout (node:net:526:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 138535079,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:389:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:627:28)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.Socket._onTimeout (node:net:526:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 138533821,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection timed out
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:389:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:627:28)
+              at TLSSocket.emit (node:events:513:28)
+              at TLSSocket.Socket._onTimeout (node:net:526:8)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-m8czsm-shard-0',
+      maxElectionId: new ObjectId("7fffffff0000000000000015"),
+      maxSetVersion: 2,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-06T04:58:40.134Z'
+}
+{
+  message: MongooseError: Operation `messages.findOne()` buffering timed out after 10000ms
+      at Timeout.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:153:23)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-06T04:59:38.533Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-06T04:59:53.803Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-06T14:02:13.828Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-06T14:42:48.568Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-06T14:50:22.904Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-07T11:48:17.989Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-07T12:11:36.449Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-07T13:07:43.873Z'
+}
+{
+  message: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+      at Function.Model.$wrapCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/model.js:5214:32)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4908:21
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:41:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:40:10)
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4907:10)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4990:15)
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 9291753,
+          lastWriteDate: 0,
+          error: MongoNetworkError: getaddrinfo ENOTFOUND ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:387:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:628:26)
+              at TLSSocket.emit (node:events:513:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 9291752,
+          lastWriteDate: 0,
+          error: MongoNetworkError: getaddrinfo ENOTFOUND ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:387:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:628:26)
+              at TLSSocket.emit (node:events:513:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 9291753,
+          lastWriteDate: 0,
+          error: MongoNetworkError: getaddrinfo ENOTFOUND ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:387:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:628:26)
+              at TLSSocket.emit (node:events:513:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-m8czsm-shard-0',
+      maxElectionId: new ObjectId("7fffffff0000000000000015"),
+      maxSetVersion: 2,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-07T14:20:44.882Z'
+}
+{
+  message: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+      at Function.Model.$wrapCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/model.js:5214:32)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4908:21
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:41:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:40:10)
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4907:10)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4990:15)
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 9294280,
+          lastWriteDate: 0,
+          error: MongoNetworkError: getaddrinfo ENOTFOUND ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:387:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:628:26)
+              at TLSSocket.emit (node:events:513:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 9294279,
+          lastWriteDate: 0,
+          error: MongoNetworkError: getaddrinfo ENOTFOUND ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:387:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:628:26)
+              at TLSSocket.emit (node:events:513:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 9294280,
+          lastWriteDate: 0,
+          error: MongoNetworkError: getaddrinfo ENOTFOUND ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net
+              at connectionFailureError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:387:20)
+              at TLSSocket.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongodb/lib/cmap/connect.js:310:22)
+              at Object.onceWrapper (node:events:628:26)
+              at TLSSocket.emit (node:events:513:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+            [Symbol(errorLabels)]: Set(0) {}
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-m8czsm-shard-0',
+      maxElectionId: new ObjectId("7fffffff0000000000000015"),
+      maxSetVersion: 2,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-07T14:20:47.264Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-07T17:03:19.026Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-07T17:23:12.312Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-07T17:23:21.125Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T11:50:55.909Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T11:51:44.538Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T11:59:10.344Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T11:59:23.783Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:01:23.394Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:02:44.181Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:02:58.381Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:04:02.912Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:06:16.818Z'
+}
+{
+  message: CastError: Cast to ObjectId failed for value "aa" (type string) at path "_id" for model "user"
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    messageFormat: undefined,
+    stringValue: '"aa"',
+    kind: 'ObjectId',
+    value: 'aa',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/bson/lib/error.js:41:28)
+        at new ObjectId (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/bson/lib/objectid.js:67:23)
+        at castObjectId (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.handleSingle (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1542:15)
+        at ObjectId.SchemaType.castForQuery (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1633:20)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/schematype.js:1602:22),
+    valueType: 'string'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:06:18.093Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:06:42.317Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:10:43.159Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:27:59.270Z'
+}
+{
+  message: StrictPopulateError: Cannot populate path `bildirimiyapan` because it is not in your schema. Set the `strictPopulate` option to false to override.
+      at getModelsMapForPopulate (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:48:12)
+      at populate (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/model.js:4665:21)
+      at _populate (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/model.js:4625:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/model.js:4602:5
+      at promiseOrCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/promiseOrCallback.js:11:14)
+      at Mongoose._promiseOrCallback (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/index.js:1234:10)
+      at Function.Model.populate (/Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/model.js:4600:23)
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/query.js:2289:19
+      at /Users/alperennuroglu/Documents/SocialMediaApi/node_modules/mongoose/lib/helpers/query/completeMany.js:37:32
+      at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+    path: 'bildirimiyapan'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:28:01.816Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:28:58.034Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:29:08.950Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:35:27.060Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:37:25.120Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:54:45.546Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:57:40.676Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T12:59:12.914Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T13:04:04.656Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T13:06:36.558Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T13:07:14.045Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-08T13:09:32.559Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T13:31:28.083Z'
+}
+{
+  message: ReferenceError: user1 is not defined
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:290:21
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T13:34:35.704Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T13:35:18.062Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T13:36:18.976Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T13:38:48.504Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T13:59:28.344Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'data')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:291:34
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T13:59:33.917Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T13:59:51.126Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'data')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:291:34
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T13:59:54.572Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:00:03.556Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:00:14.932Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:00:48.946Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:00:54.457Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:01:06.263Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:02:37.928Z'
+}
+{
+  message: TypeError: User.findById is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:290:28
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:02:39.091Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:04:07.960Z'
+}
+{
+  message: TypeError: User.findById is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:290:28
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:04:11.503Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:04:37.142Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:04:43.482Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:05:30.616Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:06:37.351Z'
+}
+{
+  message: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Document
+      at Object.writeFileSync (node:fs:2200:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:291:8
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:06:44.231Z'
+}
+{
+  message: 'MongoDb Database NOT connect',
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:07:39.504Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:29:19.691Z'
+}
+{
+  message: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Document
+      at Object.writeFileSync (node:fs:2200:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:291:8
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:30:37.977Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:30:58.104Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:32:04.151Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:33:32.280Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:35:22.820Z'
+}
+{
+  message: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Document
+      at Object.writeFileSync (node:fs:2200:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:293:8
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:37:12.472Z'
+}
+{
+  message: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Document
+      at Object.writeFileSync (node:fs:2200:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:293:8
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:37:45.350Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:38:31.974Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:40:24.453Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T14:41:53.013Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:01:34.178Z'
+}
+{
+  message: ReferenceError: sharp is not defined
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:291:21
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:01:34.877Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:01:57.453Z'
+}
+{
+  message: [Error: Input file is missing: /Users/alperennuroglu/Documents/SocialMediaApiGithub6369e229066b86b67b797219.png],
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:02:01.447Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:02:28.058Z'
+}
+{
+  message: [Error: Input file is missing: /Users/alperennuroglu/Documents/SocialMediaApiGithub6369e229066b86b67b797219.png],
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:02:29.043Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:02:50.868Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:06:22.884Z'
+}
+{
+  message: TypeError: sharp(...).resize(...).size is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:295:6
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:06:25.067Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:06:37.792Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:07:14.095Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:07:24.478Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:07:53.201Z'
+}
+{
+  message: TypeError: sharp(...).resize(...).metadata(...).rotate is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:297:6
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:10:11.863Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:10:13.094Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:12:33.144Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:17:34.720Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:17:58.071Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:18:36.677Z'
+}
+{
+  message: 'MongoDb Database NOT connect',
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:19:21.798Z'
+}
+{
+  message: Error: Expected integer between 0 and 100 for quality but received -100 of type number
+      at Object.invalidParameterError (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/is.js:124:10)
+      at Sharp.png (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/output.js:428:20)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:296:6
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13,
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:19:56.351Z'
+}
+{
+  message: Error: Expected integer between 0 and 100 for quality but received -10 of type number
+      at Object.invalidParameterError (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/is.js:124:10)
+      at Sharp.png (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/output.js:428:20)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:296:6
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13,
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:20:42.056Z'
+}
+{
+  message: Error: Expected integer between 0 and 9 for compressionLevel but received 100 of type number
+      at Object.invalidParameterError (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/is.js:124:10)
+      at Sharp.png (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/output.js:404:18)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:296:10
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13,
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:23:55.005Z'
+}
+{
+  message: Error: Expected integer between 0 and 9 for compressionLevel but received 100 of type number
+      at Object.invalidParameterError (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/is.js:124:10)
+      at Sharp.png (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/output.js:404:18)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:296:10
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13,
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:24:29.368Z'
+}
+{
+  message: Error: Expected integer between 0 and 9 for compressionLevel but received 100 of type number
+      at Object.invalidParameterError (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/is.js:124:10)
+      at Sharp.png (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/output.js:404:18)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:296:10
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13,
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:24:34.477Z'
+}
+{
+  message: Error: Expected integer between 0 and 9 for compressionLevel but received 10 of type number
+      at Object.invalidParameterError (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/is.js:124:10)
+      at Sharp.png (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/output.js:404:18)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:296:10
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13,
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:24:40.287Z'
+}
+{
+  message: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Sharp
+      at Object.writeFileSync (node:fs:2200:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:299:8
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T15:24:53.174Z'
+}
+{
+  message: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Sharp
+      at Object.writeFileSync (node:fs:2200:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:299:8
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T16:49:22.942Z'
+}
+{
+  message: Error: Expected integer between 0 and 100 for quality but received -1 of type number
+      at Object.invalidParameterError (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/is.js:124:10)
+      at Sharp.png (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/sharp/lib/output.js:428:20)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:296:10
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13,
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-11T16:50:15.583Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:25:18.693Z'
+}
+{
+  message: TypeError: Converting circular structure to JSON
+      --> starting at object with constructor 'MongoClient'
+      |     property 's' -> object with constructor 'Object'
+      |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+      --- property 'client' closes the circle
+      at JSON.stringify (<anonymous>)
+      at stringify (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/response.js:1150:12)
+      at ServerResponse.json (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/response.js:271:14)
+      at ServerResponse.send (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/response.js:162:21)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:295:16
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17,
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:25:21.573Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:25:52.150Z'
+}
+{
+  message: TypeError: Converting circular structure to JSON
+      --> starting at object with constructor 'MongoClient'
+      |     property 's' -> object with constructor 'Object'
+      |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+      --- property 'client' closes the circle
+      at JSON.stringify (<anonymous>)
+      at stringify (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/response.js:1150:12)
+      at ServerResponse.json (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/response.js:271:14)
+      at ServerResponse.send (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/response.js:162:21)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:295:16
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17,
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:25:54.779Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:26:51.329Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:26:55.108Z'
+}
+{
+  message: TypeError: Converting circular structure to JSON
+      --> starting at object with constructor 'MongoClient'
+      |     property 's' -> object with constructor 'Object'
+      |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+      --- property 'client' closes the circle
+      at JSON.stringify (<anonymous>)
+      at stringify (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/response.js:1150:12)
+      at ServerResponse.json (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/response.js:271:14)
+      at ServerResponse.send (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/response.js:162:21)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:295:16
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17,
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:26:56.398Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:27:13.349Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:27:41.303Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:28:45.919Z'
+}
+{
+  message: TypeError: users.save is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:296:17
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:28:49.163Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:29:24.008Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:29:42.242Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-14T04:29:57.253Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T07:02:43.034Z'
+}
+{
+  message: ReferenceError: users is not defined
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:295:21
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-15T07:02:45.316Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T07:03:05.560Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T07:03:10.565Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T07:03:56.952Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T07:06:51.866Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:23:04.492Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:24:05.783Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:24:47.925Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:25:08.900Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:25:13.219Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:27:53.911Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:28:45.375Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:30:32.747Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:30:53.196Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:31:59.891Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:34:53.822Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:35:27.304Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T10:35:43.429Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T12:34:16.802Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T12:35:44.030Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T12:37:23.212Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T12:37:31.331Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T12:37:39.539Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T12:38:41.701Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T12:39:59.610Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T12:41:51.908Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T12:44:10.783Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T12:46:02.299Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:42:22.220Z'
+}
+{
+  message: TypeError: Cannot set properties of undefined (setting 'user')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:291:22
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:42:24.379Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:43:04.586Z'
+}
+{
+  message: TypeError: Cannot set properties of undefined (setting 'user')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:291:22
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:43:07.618Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:44:32.888Z'
+}
+{
+  message: TypeError: Cannot set properties of undefined (setting 'user')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:291:22
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:44:32.996Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:44:47.604Z'
+}
+{
+  message: TypeError: Cannot set properties of undefined (setting 'user')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:291:22
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:44:50.018Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:44:59.481Z'
+}
+{
+  message: TypeError: Cannot set properties of undefined (setting 'user')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:292:22
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:45:02.206Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:45:25.251Z'
+}
+{
+  message: TypeError: Cannot set properties of undefined (setting 'user')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:292:22
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:45:26.311Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:45:37.194Z'
+}
+{
+  message: TypeError: Cannot set properties of undefined (setting 'user')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:291:22
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:45:40.728Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:46:26.938Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:48:28.201Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:49:38.483Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:52:45.217Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-15T15:56:10.671Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:11:30.099Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:12:13.769Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:13:16.205Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:13:26.095Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:14:06.101Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:25:26.682Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:34:39.442Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:35:26.833Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:35:48.623Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:36:32.058Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:36:35.942Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:36:55.038Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:37:22.700Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:37:51.831Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:38:13.572Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:38:21.608Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:38:24.724Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T04:39:22.256Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:24:05.253Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:26:49.962Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:27:26.068Z'
+}
+{
+  message: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of model
+      at Object.writeFileSync (node:fs:2200:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:298:12
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:27:54.608Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:29:01.374Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:29:28.872Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading '_id')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:299:32
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:29:45.590Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:30:28.781Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading '_id')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:299:32
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:30:44.833Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:30:56.920Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:31:03.133Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:32:18.995Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:33:53.320Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:34:32.262Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:37:07.431Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:39:56.498Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:41:48.643Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:43:10.477Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:43:39.998Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:43:44.091Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:44:26.652Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:47:42.876Z'
+}
+{
+  message: ReferenceError: image1 is not defined
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:334:21
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:48:03.232Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:49:49.971Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:50:20.227Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:51:22.897Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:53:49.675Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:54:13.601Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:55:04.275Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:55:13.402Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:55:57.928Z'
+}
+{
+  message: ReferenceError: image1 is not defined
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:332:21
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-16T06:56:13.939Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T07:39:43.733Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T07:40:44.692Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T07:41:22.485Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T07:41:49.464Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T07:42:10.487Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T07:42:36.429Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T07:46:04.362Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T07:46:38.653Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T07:48:38.822Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T07:50:40.215Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:15:10.859Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:16:21.682Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:17:09.412Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:19:51.534Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:29:01.974Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:29:44.482Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:33:09.418Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:36:33.143Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:36:46.161Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:38:53.317Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:39:22.217Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-16T14:41:38.984Z'
+}
