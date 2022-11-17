@@ -10,8 +10,13 @@ const text = Schema({
 })
 
 
+
 const message = Schema({
     text : [text],
+    read : {
+        type: Boolean,
+        default : false,
+    }
 })
 
 

@@ -1476,3 +1476,674 @@
   label: 'Loglama',
   timestamp: '2022-11-16T06:56:13.939Z'
 }
+{
+  message: Error: ENOENT: no such file or directory, open '/Users/alperennuroglu/Documents/SocialMediaApiGithub/images/6375036c7dcec7ae9f0d2705.jpeg'
+      at Object.openSync (node:fs:594:3)
+      at Object.writeFileSync (node:fs:2207:35)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:338:12
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    errno: -2,
+    syscall: 'open',
+    code: 'ENOENT',
+    path: '/Users/alperennuroglu/Documents/SocialMediaApiGithub/images/6375036c7dcec7ae9f0d2705.jpeg'
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-16T15:42:26.398Z'
+}
+{
+  message: TypeError: Post.find is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:386:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at Route.dispatch (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:114:3)
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:280:10),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T04:15:31.816Z'
+}
+{
+  message: TypeError: Post.find(...).limit(...).ofset is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:386:45
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at Route.dispatch (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:114:3)
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:280:10),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T04:17:36.499Z'
+}
+{
+  message: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+      at Function.Model.$wrapCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongoose/lib/model.js:5214:32)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongoose/lib/query.js:4908:21
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongoose/lib/helpers/promiseOrCallback.js:41:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongoose/lib/helpers/promiseOrCallback.js:40:10)
+      at model.Query.exec (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongoose/lib/query.js:4907:10)
+      at model.Query.Query.then (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongoose/lib/query.js:4990:15)
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    reason: TopologyDescription {
+      type: 'ReplicaSetNoPrimary',
+      servers: Map(3) {
+        'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-02.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 2999319,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection <monitor> to 15.184.72.82:27017 timed out
+              at Timeout._onTimeout (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:150:23)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {},
+            [Symbol(beforeHandshake)]: false
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-01.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 2999519,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection <monitor> to 15.184.66.29:27017 timed out
+              at Timeout._onTimeout (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:150:23)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {},
+            [Symbol(beforeHandshake)]: false
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        },
+        'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017' => ServerDescription {
+          address: 'ac-pccpxxg-shard-00-00.kttxyjd.mongodb.net:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 2999578,
+          lastWriteDate: 0,
+          error: MongoNetworkTimeoutError: connection <monitor> to 15.184.139.49:27017 timed out
+              at Timeout._onTimeout (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:150:23)
+              at listOnTimeout (node:internal/timers:559:17)
+              at processTimers (node:internal/timers:502:7) {
+            [Symbol(errorLabels)]: Set(0) {},
+            [Symbol(beforeHandshake)]: false
+          },
+          topologyVersion: null,
+          setName: null,
+          setVersion: null,
+          electionId: null,
+          logicalSessionTimeoutMinutes: null,
+          primary: null,
+          me: null,
+          '$clusterTime': null
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      setName: 'atlas-m8czsm-shard-0',
+      maxElectionId: new ObjectId("7fffffff0000000000000015"),
+      maxSetVersion: 2,
+      commonWireVersion: 0,
+      logicalSessionTimeoutMinutes: null
+    },
+    code: undefined
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T04:52:49.709Z'
+}
+{
+  message: 'MongoDb Database NOT connect',
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T04:56:04.700Z'
+}
+{
+  message: MongoServerError: Path collision at comments.user remaining portion user
+      at Connection.onMessage (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:207:30)
+      at MessageStream.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:60:60)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/message_stream.js:132:20)
+      at MessageStream._write (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+      at writeOrBuffer (node:internal/streams/writable:391:12)
+      at _write (node:internal/streams/writable:332:10)
+      at MessageStream.Writable.write (node:internal/streams/writable:336:10)
+      at TLSSocket.ondata (node:internal/streams/readable:754:22)
+      at TLSSocket.emit (node:events:513:28) {
+    ok: 0,
+    code: 31249,
+    codeName: 'Location31249',
+    '$clusterTime': {
+      clusterTime: new Timestamp({ t: 1668661173, i: 3 }),
+      signature: {
+        hash: new Binary(Buffer.from("752fd031cdfb785abe5d5e60ef90dd919e5c5098", "hex"), 0),
+        keyId: new Long("7124715217753210881")
+      }
+    },
+    operationTime: new Timestamp({ t: 1668661173, i: 3 }),
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T04:59:33.807Z'
+}
+{
+  message: MongoServerError: Path collision at comments.user remaining portion user
+      at Connection.onMessage (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:207:30)
+      at MessageStream.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:60:60)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/message_stream.js:132:20)
+      at MessageStream._write (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+      at writeOrBuffer (node:internal/streams/writable:391:12)
+      at _write (node:internal/streams/writable:332:10)
+      at MessageStream.Writable.write (node:internal/streams/writable:336:10)
+      at TLSSocket.ondata (node:internal/streams/readable:754:22)
+      at TLSSocket.emit (node:events:513:28) {
+    ok: 0,
+    code: 31249,
+    codeName: 'Location31249',
+    '$clusterTime': {
+      clusterTime: new Timestamp({ t: 1668661230, i: 3 }),
+      signature: {
+        hash: new Binary(Buffer.from("48110fdc3058b93ca6d669711923f337d0ba7fd8", "hex"), 0),
+        keyId: new Long("7124715217753210881")
+      }
+    },
+    operationTime: new Timestamp({ t: 1668661230, i: 3 }),
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:00:30.456Z'
+}
+{
+  message: MongoServerError: Path collision at comments.user remaining portion user
+      at Connection.onMessage (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:207:30)
+      at MessageStream.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:60:60)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/message_stream.js:132:20)
+      at MessageStream._write (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+      at writeOrBuffer (node:internal/streams/writable:391:12)
+      at _write (node:internal/streams/writable:332:10)
+      at MessageStream.Writable.write (node:internal/streams/writable:336:10)
+      at TLSSocket.ondata (node:internal/streams/readable:754:22)
+      at TLSSocket.emit (node:events:513:28) {
+    ok: 0,
+    code: 31249,
+    codeName: 'Location31249',
+    '$clusterTime': {
+      clusterTime: new Timestamp({ t: 1668661433, i: 4 }),
+      signature: {
+        hash: new Binary(Buffer.from("0d4296947e1953f50feaf42f27665fb86983438d", "hex"), 0),
+        keyId: new Long("7124715217753210881")
+      }
+    },
+    operationTime: new Timestamp({ t: 1668661433, i: 4 }),
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:03:54.090Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'img')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:322:30
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:07:05.847Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'img')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:322:26
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:07:49.839Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'img')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:322:26
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:09:32.377Z'
+}
+{
+  message: TypeError: Post.find is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:388:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at Route.dispatch (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:114:3)
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:280:10),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:42:36.544Z'
+}
+{
+  message: TypeError: Post.find is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:388:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at Route.dispatch (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:114:3)
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:280:10),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:43:07.585Z'
+}
+{
+  message: TypeError: Post.find is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:388:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at Route.dispatch (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:114:3)
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:280:10),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:43:36.372Z'
+}
+{
+  message: TypeError: Post.find is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:388:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at Route.dispatch (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:114:3)
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:280:10),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:43:44.405Z'
+}
+{
+  message: TypeError: Post.find is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:388:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at Route.dispatch (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:114:3)
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:280:10),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:44:11.182Z'
+}
+{
+  message: TypeError: User.find is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:388:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at Route.dispatch (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:114:3)
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:280:10),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:45:22.174Z'
+}
+{
+  message: TypeError: Post.find is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:390:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at Route.dispatch (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:114:3)
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/index.js:280:10),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:46:59.626Z'
+}
+{
+  message: TypeError: User.findById is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:300:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:55:07.330Z'
+}
+{
+  message: TypeError: User.findById is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:300:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:55:11.043Z'
+}
+{
+  message: TypeError: User.findById is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:300:29
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:55:29.956Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'img')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:322:30
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T05:57:09.601Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'img')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:322:30
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T06:00:37.049Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'img')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:322:30
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T06:02:09.943Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'img')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:322:30
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T06:04:45.280Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'img')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:322:30
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T06:05:13.676Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'img')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:322:30
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T06:05:54.632Z'
+}
+{
+  message: TypeError: FriendRequest is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:59:19
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T13:59:46.194Z'
+}
+{
+  message: TypeError: FriendRequest is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:59:19
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:02:12.834Z'
+}
+{
+  message: TypeError: FriendRequest is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:59:19
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:02:53.458Z'
+}
+{
+  message: TypeError: FriendRequest.find is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:59:33
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:03:21.934Z'
+}
+{
+  message: TypeError: FriendRequest.find is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:59:33
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:03:27.604Z'
+}
+{
+  message: TypeError: FriendRequest is not a constructor
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:59:19
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:04:12.698Z'
+}
+{
+  message: TypeError: FriendRequest is not a function
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:59:19
+      at newFn (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/express/lib/router/route.js:144:13)
+      at cors (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:188:7)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:224:17
+      at originCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:214:15)
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:219:13
+      at optionsCallback (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:199:9)
+      at corsMiddleware (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/cors/lib/index.js:204:7),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:08:00.978Z'
+}
+{
+  message: ReferenceError: select is not defined
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:138:5
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:15:23.886Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'remove')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:181:53
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:20:25.412Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'remove')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:185:10
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:22:27.714Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'remove')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:186:10
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:22:39.995Z'
+}
+{
+  message: MongoServerError: $regex has to be a string
+      at Connection.onMessage (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:207:30)
+      at MessageStream.<anonymous> (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/connection.js:60:60)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/message_stream.js:132:20)
+      at MessageStream._write (/Users/alperennuroglu/Documents/SocialMediaApiGithub/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+      at writeOrBuffer (node:internal/streams/writable:391:12)
+      at _write (node:internal/streams/writable:332:10)
+      at MessageStream.Writable.write (node:internal/streams/writable:336:10)
+      at TLSSocket.ondata (node:internal/streams/readable:754:22)
+      at TLSSocket.emit (node:events:513:28) {
+    ok: 0,
+    code: 2,
+    codeName: 'BadValue',
+    '$clusterTime': {
+      clusterTime: new Timestamp({ t: 1668695176, i: 2 }),
+      signature: {
+        hash: new Binary(Buffer.from("a56db5adaf223ac2043306a0e220fdb16c318b7e", "hex"), 0),
+        keyId: new Long("7124715217753210881")
+      }
+    },
+    operationTime: new Timestamp({ t: 1668695176, i: 2 }),
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:26:16.440Z'
+}
+{
+  message: TypeError: Cannot read properties of undefined (reading 'push')
+      at /Users/alperennuroglu/Documents/SocialMediaApiGithub/app.js:196:18
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-17T14:30:58.944Z'
+}

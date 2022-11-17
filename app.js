@@ -8,7 +8,6 @@ const User = require("./models/user-model");
 const Post = require("./models/post-model");
 const Message = require("./models/message-model");
 const FriendRequest = require("./models/friends-request");
-const { Comment, altcomment } = require("./models/comment-models");
 
 const fs = require("fs")
 const sharp = require("sharp")
@@ -31,21 +30,21 @@ app.get("/users/:name", cors(), async (req, res) => {
         { lastName: { $regex: req.params.name, $options: "i" } },
         { firstName: { $regex: req.params.name, $options: "i" } })
         .limit(4)
-        .select(["-profilImageData", "-coverImage"]);
+        .select(["profilImage","username","firstName","lastName"]);
     res.send(users);
 })
 
 //? Arkaşlık bitirme
 app.get("/remove-friend/:userid/:friendid", cors(), async (req, res) => {
     const user = await User.findById(req.params.userid)
-    .select(["-profilImageData", "-coverImage"]);
+    .select("friends");
 
     const index1 = user.friends.indexOf(req.params.friendid);
     user.friends.splice(index1, 1);
     await user.save();
 
     const user2 = await User.findById(req.params.friendid)
-    .select(["-profilImageData", "-coverImage"]);
+    .select("friends");
 
     const index2 = user.friends.indexOf(req.params.userid);
     user2.friends.splice(index2, 1);
@@ -58,7 +57,8 @@ app.get("/remove-friend/:userid/:friendid", cors(), async (req, res) => {
 app.get("/friend-request/:gonderen/:alici", cors(), async (req, res) => {
     const istek = FriendRequest({ istekuser: req.params.gonderen, aliciuser: req.params.alici });
     const varmi = await FriendRequest.find()
-        .or({ istekuser: req.params.gonderen, aliciuser: req.params.alici }, { istekuser: req.params.alici, aliciuser: req.params.gonderen });
+        .or({ istekuser: req.params.gonderen, aliciuser: req.params.alici },
+             { istekuser: req.params.alici, aliciuser: req.params.gonderen });
 
     if (varmi.length != 0) {
         return res.send("Arkadaşlık isteği zaten gönderilmiş")
@@ -77,9 +77,9 @@ app.get("/friend-request/:gonderen/:alici", cors(), async (req, res) => {
 app.get("/add-friend/:gonderen/:alici/:noficationid", cors(), async (req, res) => {
 
     const user1 = await User.findById(req.params.gonderen)
-    .select(["-profilImageData", "-coverImage"]);
+    .select("friends");
     const user2 = await User.findById(req.params.alici)
-    .select(["-profilImageData", "-coverImage"]);
+    .select("friends");
 
     const result = user1.friends.findIndex(u => u == req.params.alici);
     if (result != -1) {
@@ -107,14 +107,14 @@ app.get("/remove-request/:gonderen/:alici", cors(), async (req, res) => {
 })
 
 //? Fotoları Gönder
+//! Kullanılmıyor
 app.get("/get-photos/:id", cors(), async (req, res) => {
     const photos = await Post.find({ user: req.params.id, image: { $ne: null } }).select("img");
     res.send(photos);
-
-
 })
 
 //? Arkadaşları Gönderme
+//! Kullanılmıyor
 app.get("/get-friends/:id/:userid", cors(), async (req, res) => {
     const youfriends = await User.findById(req.params.id)
     .select("_id")
@@ -134,7 +134,7 @@ app.get("/get-friends/:id/:userid", cors(), async (req, res) => {
 //? Yorum Add
 app.post("/add-comment/:postid/:userid", cors(), async (req, res) => {
     const post = await Post.findById(req.params.postid)
-    select("-img");
+    .select("comments");
     post.comments.push({ post: req.params.postid, text: req.body.text, user: req.params.userid });
     await post.save();
     res.send(post)
@@ -143,7 +143,7 @@ app.post("/add-comment/:postid/:userid", cors(), async (req, res) => {
 //? Alt Comment Add
 app.post("/add-alt-comment/:postid/:userid/:commentid", cors(), async (req, res) => {
     const post = await Post.findById(req.params.postid)
-    .select("-img");
+    .select("comments");
     const comment = post.comments.id(req.params.commentid);
     comment.altcomment.push({ user: req.params.userid, text: req.body.text })
     // comment.altcomments.push({user : req.params.userid, text : req.body.text});
@@ -152,6 +152,7 @@ app.post("/add-alt-comment/:postid/:userid/:commentid", cors(), async (req, res)
 })
 
 //? Get Comment
+//! Kullanılmıyor
 app.get("/get-comment/:postid", cors(), async (req, res) => {
     const comment = await Comment.find({ post: req.params.postid })
     .populate({ path:  "user", select : {profilImageData :0 ,coverImage: 0}})
@@ -162,7 +163,7 @@ app.get("/get-comment/:postid", cors(), async (req, res) => {
 //? Like Atma
 app.get("/add-like/:postid/:userid", cors(), async (req, res) => {
     const post = await Post.findById(req.params.postid)
-    .select("-img");
+    .select("like");
 
     const result = post.like.findIndex(l => l.user == req.params.userid)
     if (result != -1) {
@@ -176,15 +177,20 @@ app.get("/add-like/:postid/:userid", cors(), async (req, res) => {
 //? Like'ı Geri Alma
 app.get("/remove-like/:postid/:userid", cors(), async (req, res) => {
     const post = await Post.findById(req.params.postid)
-    .select("-img");
-    post.like.find(l => l.user == req.params.userid).remove()
-    await post.save();
+    .select("like");
+    const like = post.like.find(l => l.user == req.params.userid)
+    console.log(like);
+    if(like == undefined){
+        return res.send("Bu kullanıcı zaten bu postu beğenmemiş");
+    }
+    like.remove()
+    await post.save()
     res.send(post)
 })
 
 //? Mesaj Atma
 app.post("/sendmessage/:id/:from", cors(), async (req, res) => {
-    const message = await Message.findById(req.params.id)
+    const message = await Message.findById(req.params.id).select("text")
     const newmessage = { user: req.params.from, text: req.body.text }
     message.read = false;
     message.text.push(newmessage);
@@ -198,10 +204,10 @@ app.get("/newmessage/:from/:to", cors(), async (req, res) => {
     const newMessage = Message();
     // await newMessage.save();
     const user1 = await User.findById(req.params.from)
-    .select(["-profilImageData","-coverImage"]);
+    .select("messages");
 
     const user2 = await User.findById(req.params.to)
-    .select(["-profilImageData","-coverImage"]);
+    .select("messages");
 
 
     user1.messages.push({ user: user2._id, messages: newMessage._id });
@@ -218,7 +224,7 @@ app.get("/newmessage/:from/:to", cors(), async (req, res) => {
 //? Mesajları Alma
 app.get("/getmessage/:id", cors(), async (req, res) => {
     const message = await Message.findById(req.params.id)
-    .populate({ path: "text.user", select : {profilImageData : 0, coverImage : 0}});
+    .populate({ path: "text.user", select : {profilImage : 1, usename :1 ,firstName : 1 , lastName : 1 }});
     res.send(message)
 })
 
@@ -261,6 +267,9 @@ app.get("/get-nofication/:aitolan", cors(), async (req, res) => {
 //? Nofication Add
 app.post("/add-nofication/:aitolan/:bildirimiyapan", cors(), async (req, res) => {
     console.log("add-nofication");
+    if( req.params.aitolan == req.params.bildirimiyapan){
+        return res.send("Kendine bildirim yapma")
+    }
     const newNofication = Nofication({ worktype: req.body.type, aitolan: req.params.aitolan, bildirimiyapan: req.params.bildirimiyapan })
     await newNofication.save();
     res.send(newNofication);
@@ -296,6 +305,7 @@ app.get("/delete-message/:userid/:touserid/:messageid", cors(), async (req, res)
 })
 
 //? Anasayfada yeni postlar alma
+//! Kullanılmıyor
 app.get("/get-posts/:userid/:ofset", cors(), async (req, res) => {
     const user = await User.findById(req.params.userid)
         .populate("friends", "_id")
@@ -307,7 +317,9 @@ app.get("/get-posts/:userid/:ofset", cors(), async (req, res) => {
         id_list.push(user.friends[i]._id)
     }
     id_list.push(user._id)
+
     const posts = await Post.find({ user: id_list })
+        // .select("img.data")
         .sort({ date: -1 })
         .populate({ path: "user", select: { profilImageData: 0, coverImage: 0 } })
         .populate("comments")
@@ -315,6 +327,7 @@ app.get("/get-posts/:userid/:ofset", cors(), async (req, res) => {
         .populate({ path: "comments.altcomment.user", select: { profilImageData: 0, coverImage: 0 } })
         .populate({ path: "like.user", select: { profilImageData: 0, coverImage: 0 } })
         .skip(req.params.ofset)
+
 
     res.send(posts)
 })
@@ -326,7 +339,7 @@ app.get("/get-posts/:userid/:ofset", cors(), async (req, res) => {
 var Jimp = require('jimp');
 
 //todo DENEME 
-app.get("/deneme", cors(), async (req, res) => {
+app.get("/download", cors(), async (req, res) => {
 
     const postlist = await Post.find({ "img.data": { $ne: null } }).select("_id")
 
@@ -350,9 +363,9 @@ app.get("/deneme", cors(), async (req, res) => {
             });
 
         //? Fotoğrafı Veritabınana kayıt etme
-        post.img.data = fs.readFileSync(__dirname + `/images/${post._id}.jpeg`);
-        await post.save()
-        console.log("Resim Veritabanına Kayıt Edildi");
+        // post.img.data = fs.readFileSync(__dirname + `/images/${post._id}.jpeg`);
+        // await post.save()
+        // console.log("Resim Veritabanına Kayıt Edildi");
     }
 
     return res.send(postlist)
@@ -360,7 +373,7 @@ app.get("/deneme", cors(), async (req, res) => {
 })
 
 //todo DENEME 2
-app.get("/deneme2", cors(), async (req, res) => {
+app.get("/upload", cors(), async (req, res) => {
 
     const postlist = await Post.find({ "img.data": { $ne: null } }).select("_id")
 
@@ -378,6 +391,16 @@ app.get("/deneme2", cors(), async (req, res) => {
 })
 
 
+
+
+
+app.get("/deneme", async (req, res) => {
+
+    const post = await Post.find().limit(3).skip(1);
+
+
+    res.send(post)
+})
 
 
 app.use((err, req, res, next) => {

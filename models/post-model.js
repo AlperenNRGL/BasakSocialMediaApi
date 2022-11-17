@@ -25,9 +25,7 @@ const post = Schema({
     user : {type : Schema.Types.ObjectId, ref : "user"},
     text : String,
     img:{
-        data: {
-            type : Buffer,
-        },
+        data: Buffer,
         contentType: String,
     },
         date : {

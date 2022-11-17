@@ -3,7 +3,7 @@ const {mongoose, Schema} = require('mongoose');
 
 const request = Schema({
     istekuser : {type : Schema.Types.ObjectId, ref : "user"},
-    aliciuser : {type : Schema.Types.ObjectId, ref : "user"},
+    alıcıuser : {type : Schema.Types.ObjectId, ref : "user"},
     date : {
         type : Date,
         default : Date.now,
