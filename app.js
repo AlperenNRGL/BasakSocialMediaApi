@@ -10,7 +10,6 @@ const Message = require("./models/message-model");
 const FriendRequest = require("./models/friends-request");
 
 const fs = require("fs")
-const sharp = require("sharp")
 
 var cors = require('cors');
 const Nofication = require('./models/nofication-models');
@@ -335,72 +334,6 @@ app.get("/get-posts/:userid/:ofset", cors(), async (req, res) => {
 
 
 
-
-var Jimp = require('jimp');
-
-//todo DENEME 
-app.get("/download", cors(), async (req, res) => {
-
-    const postlist = await Post.find({ "img.data": { $ne: null } }).select("_id")
-
-    console.log(postlist);
-
-    for (let i = 0; i < postlist.length; i++) {
-        let post = await Post.findById(postlist[i]._id);
-
-        fs.writeFileSync(__dirname + `/images/${post._id}.jpeg`, post.img.data);
-
-        //? Fotoğraf kalitesi düşürme
-        Jimp.read(__dirname + `/images/${post._id}.jpeg`)
-            .then(lenna => {
-                lenna
-                    .resize((lenna.bitmap.width / 2), (lenna.bitmap.height / 2))
-                    .quality(10) // set JPEG quality
-                    .write(__dirname + `/images/${post._id}.jpeg`); // save
-            })
-            .catch(err => {
-                console.error(err);
-            });
-
-        //? Fotoğrafı Veritabınana kayıt etme
-        // post.img.data = fs.readFileSync(__dirname + `/images/${post._id}.jpeg`);
-        // await post.save()
-        // console.log("Resim Veritabanına Kayıt Edildi");
-    }
-
-    return res.send(postlist)
-
-})
-
-//todo DENEME 2
-app.get("/upload", cors(), async (req, res) => {
-
-    const postlist = await Post.find({ "img.data": { $ne: null } }).select("_id")
-
-    for (let i = 0; i < postlist.length; i++) {
-        let post = await Post.findById(postlist[i]._id);
-
-        //? Fotoğrafı Veritabınana kayıt etme
-        post.img.data = fs.readFileSync(__dirname + `/images/${post._id}.jpeg`);
-        await post.save()
-        console.log("Resim Veritabanına Kayıt Edildi");
-    }
-
-    return res.send(postlist)
-
-})
-
-
-
-
-
-app.get("/deneme", async (req, res) => {
-
-    const post = await Post.find().limit(3).skip(1);
-
-
-    res.send(post)
-})
 
 
 app.use((err, req, res, next) => {
