@@ -3851,3 +3851,103 @@
   label: 'Loglama',
   timestamp: '2022-11-17T14:35:07.850Z'
 }
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T13:52:56.635Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T13:56:44.958Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T13:57:05.225Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T13:57:19.758Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T13:57:47.430Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T13:58:06.346Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T17:43:05.950Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T17:44:02.583Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T17:44:09.965Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T17:44:30.286Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T17:45:48.962Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T18:12:51.063Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T18:22:08.065Z'
+}
+{
+  message: ObjectParameterError: Parameter "filter" to deleteOne() must be an object, got 637d130e74777fbb22517ca4
+      at model.Query.Query.deleteOne (/Users/alperennuroglu/Desktop/SocialMediaApi/node_modules/mongoose/lib/query.js:3133:16)
+      at Function.deleteOne (/Users/alperennuroglu/Desktop/SocialMediaApi/node_modules/mongoose/lib/model.js:2142:13)
+      at /Users/alperennuroglu/Desktop/SocialMediaApi/app.js:340:16
+      at newFn (/Users/alperennuroglu/Desktop/SocialMediaApi/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/alperennuroglu/Desktop/SocialMediaApi/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/alperennuroglu/Desktop/SocialMediaApi/node_modules/express/lib/router/index.js:328:13)
+      at /Users/alperennuroglu/Desktop/SocialMediaApi/node_modules/express/lib/router/index.js:286:9
+      at param (/Users/alperennuroglu/Desktop/SocialMediaApi/node_modules/express/lib/router/index.js:365:14)
+      at param (/Users/alperennuroglu/Desktop/SocialMediaApi/node_modules/express/lib/router/index.js:376:14)
+      at Function.process_params (/Users/alperennuroglu/Desktop/SocialMediaApi/node_modules/express/lib/router/index.js:421:3),
+  level: 'error',
+  label: 'Loglama',
+  timestamp: '2022-11-22T18:22:15.795Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-22T18:22:49.180Z'
+}

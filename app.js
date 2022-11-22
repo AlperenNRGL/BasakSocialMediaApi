@@ -75,6 +75,11 @@ app.get("/friend-request/:gonderen/:alici", cors(), async (req, res) => {
 //? Arkadaş Olma
 app.get("/add-friend/:gonderen/:alici/:noficationid", cors(), async (req, res) => {
 
+    if(req.params.noficationid == "undefined"){
+        console.log("noficationis");
+        req.params.noficationid = await Nofication.find({bildirimiyapan : req.params.gonderen , aitolan : req.params.alici , worktype : "request"}).select("_id")
+    }
+
     const user1 = await User.findById(req.params.gonderen)
     .select("friends");
     const user2 = await User.findById(req.params.alici)
@@ -331,7 +336,10 @@ app.get("/get-posts/:userid/:ofset", cors(), async (req, res) => {
     res.send(posts)
 })
 
-
+app.use("/delete-post/:id", async (req, res) => {
+    await Post.deleteOne({ _id : req.params.id});
+    res.send("Post Silindi");
+})
 
 
 
