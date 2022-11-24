@@ -16,8 +16,6 @@ const logger = createLogger({
     transports: [
         
         new transports.Console({ level: "error" }),
-        new transports.File({ level: "error", filename: "log/error.log",maxsize:'1MB', }),
-        new transports.File({ filename: "log/info.log", maxsize:'1MB', }),
         new transports.MongoDB({
             level : "error",
             db: 'mongodb+srv://alperen:135790@social-media.kttxyjd.mongodb.net/Social-Media?retryWrites=true&w=majority',

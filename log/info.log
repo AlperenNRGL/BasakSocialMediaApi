@@ -4271,3 +4271,21 @@
   label: 'Loglama',
   timestamp: '2022-11-23T18:59:07.609Z'
 }
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-24T09:16:48.246Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-24T09:16:58.533Z'
+}
+{
+  message: 'MongoDb Database connect',
+  level: 'info',
+  label: 'Loglama',
+  timestamp: '2022-11-24T12:53:46.351Z'
+}
