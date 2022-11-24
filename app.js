@@ -35,14 +35,14 @@ app.get("/users/:name", cors(), async (req, res) => {
 
 //? Arkaşlık bitirme
 app.get("/remove-friend/:userid/:friendid", cors(), async (req, res) => {
-    const user = await User.findById(req.params.userid)
+    let user = await User.findById(req.params.userid)
         .select("friends");
 
     const index1 = user.friends.indexOf(req.params.friendid);
     user.friends.splice(index1, 1);
     await user.save();
 
-    const user2 = await User.findById(req.params.friendid)
+    let user2 = await User.findById(req.params.friendid)
         .select("friends");
 
     const index2 = user.friends.indexOf(req.params.userid);
@@ -349,7 +349,7 @@ app.get("/get-posts/:userid/:ofset", cors(), async (req, res) => {
     res.send(posts)
 })
 
-app.use("/delete-post/:id", async (req, res) => {
+app.get("/delete-post/:id", async (req, res) => {
     await Post.deleteOne({ _id: req.params.id });
     res.send("Post Silindi");
 })
