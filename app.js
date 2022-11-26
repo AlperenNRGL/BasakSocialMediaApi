@@ -25,9 +25,10 @@ app.get("/", cors(), (req, res) => {
 //? User Sorgulama
 app.get("/users/:name", cors(), async (req, res) => {
     const users = await User.find().or(
+        { firstName: { $regex: req.params.name, $options: "i" } },
         { username: { $regex: req.params.name, $options: "i" } },
         { lastName: { $regex: req.params.name, $options: "i" } },
-        { firstName: { $regex: req.params.name, $options: "i" } })
+        )
         .limit(4)
         .select(["profilImage", "username", "firstName", "lastName"]);
     res.send(users);
@@ -39,20 +40,17 @@ app.get("/remove-friend/:userid/:friendid", cors(), async (req, res) => {
         .select("friends");
 
     const index1 = user.friends.indexOf(req.params.friendid);
+    if(index1 == -1)
+        return res.status(500).send("Bu bişi arkadaşınız değil")
     user.friends.splice(index1, 1);
     await user.save();
-
-    let user2 = await User.findById(req.params.friendid)
-        .select("friends");
-
-    const index2 = user.friends.indexOf(req.params.userid);
-    user2.friends.splice(index2, 1);
-    await user2.save();
+    await Nofication({ bildirimiyapan : req.params.userid , aitolan : req.params.friendid, worktype : "unrequest" }).save()
 
     res.send("remove friends")
 })
 
 //? İstek Gönderme
+//! Artık kullanılmıyor.
 app.get("/friend-request/:gonderen/:alici", cors(), async (req, res) => {
     const istek = FriendRequest({ istekuser: req.params.gonderen, aliciuser: req.params.alici });
     const varmi = await FriendRequest.find()
@@ -73,45 +71,29 @@ app.get("/friend-request/:gonderen/:alici", cors(), async (req, res) => {
 })
 
 //? Arkadaş Olma
-app.get("/add-friend/:gonderen/:alici/:noficationid", cors(), async (req, res) => {
-
-    if (req.params.noficationid == "undefined") {
-        console.log("noficationis");
-        req.params.noficationid = await Nofication.find({ bildirimiyapan: req.params.gonderen, aitolan: req.params.alici, worktype: "request" }).select("_id")
-    }
+app.get("/add-friend/:gonderen/:alici", cors(), async (req, res) => {
 
     const user1 = await User.findById(req.params.gonderen)
         .select("friends");
-    const user2 = await User.findById(req.params.alici)
-        .select("friends");
 
-    const result = user1.friends.findIndex(u => u == req.params.alici);
-    if (result != -1) {
-        await Nofication.deleteOne({ _id: req.params.noficationid });
-        return res.send("Bu kullanıcılar zaten arkadaş");
-    }
-    await FriendRequest.deleteOne().or([{ istekuser: req.params.gonderen, aliciuser: req.params.alici }, { istekuser: req.params.alici, aliciuser: req.params.gonderen }]);
-    user1.friends.push(user2._id);
-    user2.friends.push(user1._id);
+    if(user1.friends.indexOf(req.params.alici) != -1 )
+        return res.status(500).send("Bu kişi zaten arkdaşınız");
 
-
+    await Nofication({ bildirimiyapan : req.params.gonderen , aitolan : req.params.alici, worktype : "request" }).save()
+    user1.friends.push(req.params.alici);
     await user1.save()
-    await user2.save()
-
-    await Nofication.deleteOne({ _id: req.params.noficationid });
-
     res.send("Arkadaşlık Sağlandı");
 })
 
 //? İstek İptal Etme
+//! Artık kullanılmıyor.
 app.get("/remove-request/:gonderen/:alici", cors(), async (req, res) => {
-    const request = await FriendRequest.findOneAndRemove({ istekuser: req.params.gonderen, aliciuser: req.params.alici });
+    const request = await FriendRequest.deleteOne({ istekuser: req.params.gonderen, aliciuser: req.params.alici });
     await Nofication.deleteOne({ _id: request.noficationid });
     res.send("İstek Silindi");
 })
 
 //? Fotoları Gönder
-//! Kullanılmıyor
 app.get("/get-photos/:id", cors(), async (req, res) => {
     const photos = await Post.find({ user: req.params.id, image: { $ne: null } }).select("img");
     res.send(photos);
@@ -295,7 +277,7 @@ app.post("/add-nofication/:aitolan/:bildirimiyapan", cors(), async (req, res) =>
 
 //? Get Request Nofication
 app.get("/get-request-nofication/:userid", cors(), async (req, res) => {
-    const nofications = await Nofication.find({ aitolan: req.params.userid, worktype: "request" })
+    const nofications = await Nofication.find({ aitolan: req.params.userid, $or : [{worktype: "request"}, {worktype: "unrequest"}]   })
         .populate("bildirimiyapan", ["profilImage", "firstName", "lastName"]);
     return res.send(nofications);
 })
