@@ -1,45 +1,46 @@
 // const  Joi  = require('joi');
-const {mongoose, Schema} = require('mongoose');
+const { mongoose, Schema } = require('mongoose');
 
 
 const altcomment = Schema({
-    user : {type : Schema.Types.ObjectId, ref : "user"},
-    text : String,
-    date : {
-        type : Date,
-        default : Date.now,
+    user: { type: Schema.Types.ObjectId, ref: "user" },
+    text: String,
+    date: {
+        type: Date,
+        default: Date.now,
     },
 })
 
 const comment = Schema({
-    user : {type : Schema.Types.ObjectId, ref : "user"},
-    date : {
-        type : Date,
-        default : Date.now,
+    user: { type: Schema.Types.ObjectId, ref: "user" },
+    date: {
+        type: Date,
+        default: Date.now,
     },
-    text : String,
-    altcomment : [altcomment],
+    text: String,
+    altcomment: [altcomment],
 });
 
 const post = Schema({
-    user : {type : Schema.Types.ObjectId, ref : "user"},
-    text : String,
-    img:{
+    user: { type: Schema.Types.ObjectId, ref: "user" },
+    text: String,
+    img: {
         data: Buffer,
         contentType: String,
     },
-        date : {
-        type : Date,
-        default : Date.now,
+    imgPath : String,
+    date: {
+        type: Date,
+        default: Date.now,
     },
-    like : [{
-        user : {type : Schema.Types.ObjectId, ref : "user"},
-        date : {
-            type : Date,
-            default : Date.now,
+    like: [{
+        user: { type: Schema.Types.ObjectId, ref: "user" },
+        date: {
+            type: Date,
+            default: Date.now,
         },
     }],
-    comments : [comment]
+    comments: [comment]
 })
 
 

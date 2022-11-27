@@ -308,25 +308,25 @@ app.get("/delete-message/:userid/:touserid/:messageid", cors(), async (req, res)
 app.get("/get-posts/:userid/:ofset", cors(), async (req, res) => {
     const user = await User.findById(req.params.userid)
         .populate("friends", "_id")
-        .select(["-profilImageData", "-coverImage"]);
-
+        .select("_id");
 
     let id_list = [];
     for (let i = 0; i < user.friends.length; i++) {
         id_list.push(user.friends[i]._id)
     }
     id_list.push(user._id)
+   
+    let posts = await Post.find({ user: id_list })
+    .sort({ date: -1 })
+    .populate({ path: "user", select: { profilImage: 1, username: 1 } })
+    .populate("comments")
+    .populate({ path: "comments.user", select: { profilImage: 1, username: 1 } })
+    .populate({ path: "comments.altcomment.user", select: { profilImage: 1, username: 1 } })
+    .populate({ path: "like.user", select: { profilImage: 1 , username : 1} })
+    .skip(req.params.ofset)
+    .select("-img");
 
-    const posts = await Post.find({ user: id_list })
-        // .select("img.data")
-        .sort({ date: -1 })
-        .populate({ path: "user", select: { profilImageData: 0, coverImage: 0 } })
-        .populate("comments")
-        .populate({ path: "comments.user", select: { profilImageData: 0, coverImage: 0 } })
-        .populate({ path: "comments.altcomment.user", select: { profilImageData: 0, coverImage: 0 } })
-        .populate({ path: "like.user", select: { profilImageData: 0, coverImage: 0 } })
-        .skip(req.params.ofset)
-
+    posts.splice(3,posts.length-3)
 
     res.send(posts)
 })
