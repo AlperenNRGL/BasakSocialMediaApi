@@ -15,6 +15,9 @@ var cors = require('cors');
 const Nofication = require('./models/nofication-models');
 const logger = require('./helpers/winston');
 
+
+const transporter = require("./helpers/mailer");
+
 app.use(express.json())
 app.use(cors())
 
@@ -28,7 +31,7 @@ app.get("/users/:name", cors(), async (req, res) => {
         { firstName: { $regex: req.params.name, $options: "i" } },
         { username: { $regex: req.params.name, $options: "i" } },
         { lastName: { $regex: req.params.name, $options: "i" } },
-        )
+    )
         .limit(4)
         .select(["profilImage", "username", "firstName", "lastName"]);
     res.send(users);
@@ -40,11 +43,11 @@ app.get("/remove-friend/:userid/:friendid", cors(), async (req, res) => {
         .select("friends");
 
     const index1 = user.friends.indexOf(req.params.friendid);
-    if(index1 == -1)
+    if (index1 == -1)
         return res.status(500).send("Bu bişi arkadaşınız değil")
     user.friends.splice(index1, 1);
     await user.save();
-    await Nofication({ bildirimiyapan : req.params.userid , aitolan : req.params.friendid, worktype : "unrequest" }).save()
+    await Nofication({ bildirimiyapan: req.params.userid, aitolan: req.params.friendid, worktype: "unrequest" }).save()
 
     res.send("remove friends")
 })
@@ -76,10 +79,10 @@ app.get("/add-friend/:gonderen/:alici", cors(), async (req, res) => {
     const user1 = await User.findById(req.params.gonderen)
         .select("friends");
 
-    if(user1.friends.indexOf(req.params.alici) != -1 )
+    if (user1.friends.indexOf(req.params.alici) != -1)
         return res.status(500).send("Bu kişi zaten arkdaşınız");
 
-    await Nofication({ bildirimiyapan : req.params.gonderen , aitolan : req.params.alici, worktype : "request" }).save()
+    await Nofication({ bildirimiyapan: req.params.gonderen, aitolan: req.params.alici, worktype: "request" }).save()
     user1.friends.push(req.params.alici);
     await user1.save()
     res.send("Arkadaşlık Sağlandı");
@@ -120,12 +123,12 @@ app.get("/get-friends/:id/:userid", cors(), async (req, res) => {
 //? Yorum Add
 app.post("/add-comment/:postid/:userid", cors(), async (req, res) => {
     const post = await Post.findById(req.params.postid)
-        .populate({ path :  "user", select : "_id"})
+        .populate({ path: "user", select: "_id" })
         .select("comments");
     post.comments.push({ post: req.params.postid, text: req.body.text, user: req.params.userid });
     await post.save();
 
-    const newnofication = Nofication({ bildirimiyapan : req.params.userid , aitolan : post.user._id , worktype : "comment" })
+    const newnofication = Nofication({ bildirimiyapan: req.params.userid, aitolan: post.user._id, worktype: "comment" })
     await newnofication.save();
 
     res.send(post)
@@ -134,13 +137,13 @@ app.post("/add-comment/:postid/:userid", cors(), async (req, res) => {
 //? Alt Comment Add
 app.post("/add-alt-comment/:postid/:userid/:commentid", cors(), async (req, res) => {
     const post = await Post.findById(req.params.postid)
-        .populate({ path :  "user", select : "_id"})
+        .populate({ path: "user", select: "_id" })
         .select("comments");
     const comment = post.comments.id(req.params.commentid);
     comment.altcomment.push({ user: req.params.userid, text: req.body.text })
     await post.save();
 
-    const newnofication = Nofication({ bildirimiyapan : req.params.userid , aitolan : post.user._id , worktype : "comment" })
+    const newnofication = Nofication({ bildirimiyapan: req.params.userid, aitolan: post.user._id, worktype: "comment" })
     await newnofication.save();
     res.send(post)
 })
@@ -157,7 +160,7 @@ app.get("/get-comment/:postid", cors(), async (req, res) => {
 //? Like Atma
 app.get("/add-like/:postid/:userid", cors(), async (req, res) => {
     const post = await Post.findById(req.params.postid)
-        .populate({ path :  "user", select : "_id"})
+        .populate({ path: "user", select: "_id" })
         .select("like");
 
     const result = post.like.findIndex(l => l.user == req.params.userid)
@@ -277,7 +280,7 @@ app.post("/add-nofication/:aitolan/:bildirimiyapan", cors(), async (req, res) =>
 
 //? Get Request Nofication
 app.get("/get-request-nofication/:userid", cors(), async (req, res) => {
-    const nofications = await Nofication.find({ aitolan: req.params.userid, $or : [{worktype: "request"}, {worktype: "unrequest"}]   })
+    const nofications = await Nofication.find({ aitolan: req.params.userid, $or: [{ worktype: "request" }, { worktype: "unrequest" }] })
         .populate("bildirimiyapan", ["profilImage", "firstName", "lastName"]);
     return res.send(nofications);
 })
@@ -315,18 +318,18 @@ app.get("/get-posts/:userid/:ofset", cors(), async (req, res) => {
         id_list.push(user.friends[i]._id)
     }
     id_list.push(user._id)
-   
-    let posts = await Post.find({ user: id_list })
-    .sort({ date: -1 })
-    .populate({ path: "user", select: { profilImage: 1, username: 1 } })
-    .populate("comments")
-    .populate({ path: "comments.user", select: { profilImage: 1, username: 1 } })
-    .populate({ path: "comments.altcomment.user", select: { profilImage: 1, username: 1 } })
-    .populate({ path: "like.user", select: { profilImage: 1 , username : 1} })
-    .skip(req.params.ofset)
-    .select("-img");
 
-    posts.splice(3,posts.length-3)
+    let posts = await Post.find({ user: id_list })
+        .sort({ date: -1 })
+        .populate({ path: "user", select: { profilImage: 1, username: 1 } })
+        .populate("comments")
+        .populate({ path: "comments.user", select: { profilImage: 1, username: 1 } })
+        .populate({ path: "comments.altcomment.user", select: { profilImage: 1, username: 1 } })
+        .populate({ path: "like.user", select: { profilImage: 1, username: 1 } })
+        .skip(req.params.ofset)
+        .select("-img");
+
+    posts.splice(3, posts.length - 3)
 
     res.send(posts)
 })
@@ -336,6 +339,28 @@ app.get("/delete-post/:id", async (req, res) => {
     res.send("Post Silindi");
 })
 
+app.get("/sikayet/:userid/:postid", async (req, res) => {
+
+    const user = await User.findById(req.params.userid).select(["firstName", "lastName"]);
+    const post = await Post.findById(req.params.postid)
+    .populate({path : "user", select : ["firstName", "lastName"]})
+    .select(["imgPath", "text"]);
+
+    transporter.sendMail({
+        from: 'alperen.nuroglu@yandex.com', // sender address
+        to: 'alperen.nuroglu@yandex.com', // list of receivers
+        subject: `Şikayet başvurusu ${post._id} `, // Subject line
+        html: `
+        <div><b>Post id : </b>${post._id}</div>
+        <div><b>Post sahibi : </b>${post.user.firstName} ${post.user.lastName} </div>
+        <div><b>Şikayet yapan : </b>${user.firstName} ${user.lastName} </div>
+        <hr>
+        <p>${post.text}</p>
+        <img width="350px" height="350px" src="http://basaksocialmedia.herokuapp.com/static/uploads/${post.imgPath}">
+        `,
+    })
+    return res.send("sikayet")
+})
 
 
 
